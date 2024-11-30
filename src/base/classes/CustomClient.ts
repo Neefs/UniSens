@@ -8,7 +8,7 @@ import Task from "./Task";
 
 export default class CustomClient extends Client implements ICustomClient {
     config: IConfig;
-    handler: Handler,
+    handler: Handler;
     tasks: Collection<string, Task>;
     commands: Collection<string, Command>;
     subCommands: Collection<string, SubCommand>;
